@@ -14,7 +14,7 @@ h1 {
 }
 
 h3 {
-    display: block;
+    display: inline-block;
     width: 50%;
     margin-left: 90px;
     margin-top: 90px;
@@ -25,9 +25,11 @@ h3 {
 
 body ul {
     display: inline-block;
+    width: 50%;
     list-style-type: none;
     margin-left: 45px;
     margin-top: 5px;
+    margin-bottom: 30px
 
 }
 
@@ -35,7 +37,15 @@ body li {
     padding: 3px;
 }
 
-footer {
-    display: inline-block;
+footer img {
+    float: right;
+    margin-right: 125px;
+    height: 48%;
+    width: 48%;
+}
+
+footer li {
+    display: inline; 
+    color: #e0e1e2;
 
 }
