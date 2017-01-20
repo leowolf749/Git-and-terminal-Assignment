@@ -80,6 +80,7 @@ window.addEventListener('load', function () {
         }
     });
 
+Wad.midiInstrument = new Wad({source : 'sine'});
 
 });
 
