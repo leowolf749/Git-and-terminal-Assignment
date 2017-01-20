@@ -16,7 +16,7 @@ gulp.task('default', ['html', 'css', 'js']);
 // Step 3: create subtasks
 gulp.task('html', function () {
     // Copy index.html into the public/ directory.
-    return gulp.src('index.html')
+    return gulp.src('wad/index.html')
         .pipe(gulp.dest('public/'));
 });
 
@@ -30,7 +30,7 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
     // Copy js file into public/
-    return gulp.src('js/app.js')
+    return gulp.src('wad/build/app.js')
         .pipe(browser.browserify())
         .pipe(gulp.dest('public/'));
 });
@@ -39,5 +39,5 @@ gulp.task('watch', ['default'], function () {
     // gulp.watch('files-to-watch', 'tasks-to-run')
     gulp.watch('*.html', ['html']);
     gulp.watch('scss/*.scss', ['css']);
-    gulp.watch('js/*.js', ['js']);
+    gulp.watch('wad/build/app.js', ['js']);
 });
